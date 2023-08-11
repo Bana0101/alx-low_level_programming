@@ -3,12 +3,12 @@
 #include <stdio.h>
 
 /**
- * betty style doc for function main goes there
- *
  * main - Entry point for the program
  *
  * Retun: Always 0 (Succuss)
 */
+
+/* betty style doc for function main goes there*/
 int main(void)
 {
 	int n;
