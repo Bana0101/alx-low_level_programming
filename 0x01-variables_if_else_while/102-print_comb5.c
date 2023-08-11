@@ -25,13 +25,13 @@ int main(void)
 						putchar(' ');
 						putchar(k + '0');
 						putchar(n + '0');
+					
+						if (i != 9 || j != 8 || k != 9 || n != 9)
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
-					if (i != 9 || j != 8 || k != 9 || n != 9)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-
 				}
 			}
 		}
