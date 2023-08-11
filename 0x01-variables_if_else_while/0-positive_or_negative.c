@@ -1,13 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/**
- * main - Entry point for the proram
- *
-*/
 
-/* *
+/**
  * betty style doc for function main goes there
+ *
+ * main - Entry point for the program
  *
  * Retun: Always 0 (Succuss)
 */
