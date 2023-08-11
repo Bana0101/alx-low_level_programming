@@ -7,9 +7,10 @@
 */
 
 /* *
- * betty style doc for function main goes there 
+ * betty style doc for function main goes there
+ *
  * Retun: Always 0 (Succuss)
- * */
+*/
 int main(void)
 {
 	int n;
