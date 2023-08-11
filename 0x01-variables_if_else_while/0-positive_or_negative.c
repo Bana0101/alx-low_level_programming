@@ -3,14 +3,10 @@
 #include <stdio.h>
 
 /**
- * main - Entry point for the program
+ *main - Entry point for the program
  *
- * Description: positive or negative
- *
- * Retun: Always 0 (Succuss)
+ *Return: Always 0 (Success)
 */
-
-/* betty style doc for function main goes there*/
 int main(void)
 {
 	int n;
