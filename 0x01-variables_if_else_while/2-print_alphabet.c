@@ -6,11 +6,12 @@
 */
 int main(void)
 {
-	int alphabet[] = "abcdefghijklmnopqrstuvwxyz";
+	int alphabet = "a";
 
-	for (int i = O; i < 26; i++)
+	while (alphabet <= "z")
 	{
-		putchar(alphabet[i]);
+		putchar(alphabet);
+		alphabet++;
 	}
 	putchar("\n");
 	return (0);
