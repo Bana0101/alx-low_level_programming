@@ -1,6 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+/**
+ * main - Entry point for the proram
+ *
+ * Retun: Always 0 (Succuss)
+*/
 
 /* betty style doc for function main goes there */
 int main(void)
