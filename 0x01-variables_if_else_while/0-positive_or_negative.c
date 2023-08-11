@@ -5,7 +5,7 @@
 /**
  * main - Entry point for the program
  *
- * description: positive or negative
+ * Description: positive or negative
  *
  * Retun: Always 0 (Succuss)
 */
