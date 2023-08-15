@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <main.h>
+#include "main.h"
 
 /**
  * main - entry point
@@ -14,8 +13,8 @@ int main(void)
 
 	for (i = 0; rang[i] != '\0'; i++)
 	{
-		putchar(rang[i]);
+		_putchar(rang[i]);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
