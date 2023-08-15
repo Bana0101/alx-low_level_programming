@@ -3,6 +3,8 @@
 /**
  * _islower - a function that checks for lowercase character.
  *
+ * c: is an input character
+ *
  * Return: 1 if its a lowercase character otherwise its 0
 */
 
