@@ -11,7 +11,7 @@ int main(void)
 	long int i = 0, n = 1, m = 2, t;
 
 	printf("1");
-	while (i < 50)
+	while (i < 49)
 	{
 		printf(", %ld", m);
 		t = n;
