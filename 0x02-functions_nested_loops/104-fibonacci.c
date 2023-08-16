@@ -8,12 +8,12 @@
 
 int main(void)
 {
-	long int i = 0, n = 1, m = 2, t;
+	unsigned long i = 0, n = 1, m = 2, t;
 
 	printf("1");
 	while (i < 97)
 	{
-		printf(", %ld", m);
+		printf(", %lu", m);
 		t = n;
 		n = m;
 		m += t;
