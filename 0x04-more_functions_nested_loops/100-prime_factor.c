@@ -8,13 +8,13 @@
 
 int main(void)
 {
-	long int i = 2, n;
+	long int i = 3, n;
 
 	n = 612852475143;
-	while (i * i <= n)
+	while (i < n)
 	{
 		if ((n % i) != 0)
-			i++;
+			i += 2;
 		else
 			n /= i;
 	}
