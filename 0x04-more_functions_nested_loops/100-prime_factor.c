@@ -11,7 +11,7 @@ int main(void)
 	long int i = 2, n;
 
 	n = 612852475143;
-	while (i < n)
+	while (i * i <= n)
 	{
 		if ((n % i) != 0)
 			i++;
