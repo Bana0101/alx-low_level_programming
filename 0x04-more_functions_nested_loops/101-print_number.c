@@ -1,13 +1,9 @@
 #include "main.h"
-
 /**
  * print_number - function that prints an integer.
- *
  * @n: input number
- *
  * Return: void
 */
-
 void print_number(int n)
 {
 	int t, i, j, ctr10 = 1;
