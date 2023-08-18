@@ -6,29 +6,16 @@
 */
 void print_number(int n)
 {
-	int t, i, j, ctr10 = 1;
-	int cnt = 1;
+	int x = n;
 
-	if (n < 0)
+	if (x < 0)
 	{
 		_putchar('-');
-		n = (-1) * n;
+		x = (-1) * x;
 	}
-	t = n;
-	while (t > 9)
+	if (x / 10)
 	{
-		t = t / 10;
-		cnt++;
+		print_number(x / 10);
 	}
-	t = n;
-	for (i = 0; i < cnt; i++)
-	{
-		for (j = 0; j < (cnt - (i + 1)); j++)
-			t = t / 10;
-			ctr10 = ctr10 * 10;
-		_putchar(t + '0');
-		n = n - t * ctr10;
-		ctr10 = 1;
-	}
-	_putchar('\n');
+	_putchar((x % 10) + '0');
 }
