@@ -9,12 +9,12 @@ void print_number(int n)
 	int t, i, j, ctr10 = 1;
 	unsigned int cnt = 1;
 
-	t = n;
 	if (n < 0)
 	{
 		_putchar('-');
 		n = (-1) * n;
 	}
+	t = n;
 	while (t > 9)
 	{
 		t = t / 10;
