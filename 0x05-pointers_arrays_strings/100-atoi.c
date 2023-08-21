@@ -8,20 +8,16 @@
 
 int _atoi(char *s)
 {
-	int sign = 1, i = 0, j = 1;
-	char *v;
+	int sign = 1, i = 0;
+	int v = 0;
 
 	while (s[i])
 	{
 		if (s[i] == 45)
 			sign = -sign;
 		if ( s[i] <= 57 && s[i] >= 48)
-		{
-			v[j] = s[i];
-			j++;
-		}
+			v = v * 10 + (s[i] - '0');
 	}
-	v[0] = sign + '0';
-	return (v);
+	return (sign * v);
 
 }
