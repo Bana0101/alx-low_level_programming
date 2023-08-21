@@ -8,14 +8,11 @@
 
 void rev_string(char *s)
 {
-	int j = 0, l = 1;
+	int j = 0, l = 0;
 	char swap;
 
-	while (*s != '\0')
-	{
-		s++;
+	while (s[l])
 		l++;
-	}
 	while (j <= (l / 2))
 	{
 		swap = s[l - j - 1];
