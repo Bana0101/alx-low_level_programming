@@ -12,8 +12,10 @@ void rev_string(char *s)
 	char *v = s;
 
 	while (*s != '\0')
+	{
 		s++;
 		i++;
+	}
 	char array[i];
 
 	while (s != v)
