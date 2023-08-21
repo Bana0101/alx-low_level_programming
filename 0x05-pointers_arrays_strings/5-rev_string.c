@@ -13,7 +13,7 @@ void rev_string(char *s)
 
 	while (s[l])
 		l++;
-	while (j <= (l / 2))
+	while (j < (l / 2))
 	{
 		swap = s[l - j - 1];
 		s[l - j - 1] = s[j];
