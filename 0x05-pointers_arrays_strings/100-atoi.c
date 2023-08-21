@@ -15,8 +15,13 @@ int _atoi(char *s)
 	{
 		if (s[i] == 45)
 			sign = -sign;
-		if ( s[i] <= 57 && s[i] >= 48)
+		if (s[i] <= 57 && s[i] >= 48)
+		{
 			v = v * 10 + (s[i] - '0');
+			if (s[i + 1] > 57 || s[i + 1] < 48)
+				break;
+		}
+		i++;
 	}
 	return (sign * v);
 
