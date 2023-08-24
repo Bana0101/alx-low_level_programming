@@ -14,7 +14,7 @@ char *cap_string(char *c)
 
 	while (*c)
 	{
-		for (i = 0; i < 11; i++)
+		for (i = 0; i < 12; i++)
 			if (*c == separators[i])
 			{
 				i++;
