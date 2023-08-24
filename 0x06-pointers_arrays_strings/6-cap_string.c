@@ -10,13 +10,16 @@ char *cap_string(char *c)
 {
 	int i, limit = 1;
 	char *ptr = c;
-	char separators[] = "\t,;.\"!?(){}";
+	char separators[] = "\n\t,;.\"!?(){}";
 
 	while (*c)
 	{
 		for (i = 0; i < 11; i++)
 			if (*c == separators[i])
+			{
+				i++;
 				limit = 1;
+			}
 		if (limit == 1 && *c >= 97 && *c <= 122)
 		{
 			*c = *c - 32;
