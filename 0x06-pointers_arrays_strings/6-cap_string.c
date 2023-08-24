@@ -17,13 +17,13 @@ char *cap_string(char *c)
 		for (i = 0; i < 12; i++)
 			if (*c == separators[i])
 				limit = 1;
-		if (limit == 1 && *c >= 65 && *c <= 90)
-			limit = 0;
 		if (limit == 1 && *c >= 97 && *c <= 122)
 		{
 			*c = *c - 32;
 			limit = 0;
 		}
+		else if (limit == 1 && *c >= 65 && *c <= 90)
+			limit = 0;
 		c++;
 	}
 	return (ptr);
