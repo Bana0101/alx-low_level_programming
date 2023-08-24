@@ -9,6 +9,7 @@
 char *cap_string(char *c)
 {
 	int i, limit = 1;
+	char *ptr = c;
 	char separators[] = "\t\n,;.\"!?(){}";
 
 	while (*c)
@@ -25,5 +26,5 @@ char *cap_string(char *c)
 		}
 		c++;
 	}
-	return (c);
+	return (ptr);
 }
