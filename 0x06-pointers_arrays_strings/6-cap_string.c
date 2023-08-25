@@ -14,14 +14,24 @@ char *cap_string(char *c)
 	while (*c)
 	{
 		for (i = 0; i < 12; i++)
+		{
 			if (*c == separators[i])
 			{
 				i++;
 				limit = 1;
+				c++;
 			}
+		}
 		if (limit == 1 && *c >= 97 && *c <= 122)
 		{
 			*c = *c - 32;
+			limit = 0;
+		}
+		else if (*c == ' ')
+		{
+			c++;
+			if (*c >= 97 && *c <= 122)
+				*c = *c - 32;
 			limit = 0;
 		}
 		else if (limit == 1 && *c >= 65 && *c <= 90)
