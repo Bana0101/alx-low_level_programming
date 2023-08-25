@@ -27,7 +27,7 @@ char *cap_string(char *c)
 			*c = *c - 32;
 			limit = 0;
 		}
-	else if (*c == ' ')
+		else if (*c == ' ')
 		{
 			while (*c == ' ')
 				c++;
