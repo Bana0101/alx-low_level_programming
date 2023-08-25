@@ -34,7 +34,7 @@ char *cap_string(char *c)
 				*c = *c - 32;
 			limit = 0;
 		}
-		else if (limit == 1 && !(*c >= 97 && *c <= 90))
+		else if (limit == 1 && !(*c >= 97 && *c <= 122))
 			limit = 0;
 		c++;
 	}
