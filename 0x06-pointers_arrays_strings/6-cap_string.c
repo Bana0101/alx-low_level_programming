@@ -27,9 +27,10 @@ char *cap_string(char *c)
 			*c = *c - 32;
 			limit = 0;
 		}
-		else if (*c == ' ')
+	else if (*c == ' ')
 		{
-			c++;
+			while (*c == ' ')
+				c++;
 			if (*c >= 97 && *c <= 122)
 				*c = *c - 32;
 			limit = 0;
