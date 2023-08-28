@@ -1,6 +1,10 @@
 #include "main.h"
 
 /**
+ * _strchr - a function that locates a character in a string.
+ * @s: input address
+ * @c: input character
+ * Return: s or Null
 */
 
 char *_strchr(char *s, char c)
