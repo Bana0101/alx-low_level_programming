@@ -34,7 +34,7 @@ int _ato(char *s)
 
 int main(int argc, char **argv)
 {
-	int i = _ato(argv[1]), j = _ato(argv[2]);
+	int i, j;
 
 	if (argc < 3 || argc > 3)
 	{
@@ -43,6 +43,8 @@ int main(int argc, char **argv)
 	}
 	else
 	{
+		i = _ato(argv[1]);
+		j = _ato(argv[2]);
 		printf("%d\n", i * j);
 	}
 	return (0);
