@@ -12,7 +12,8 @@ char **strtow(char *str)
 	int i = 0, j, width = 0, line = 0, nline = 1;
 	char **grid;
 
-
+	if (str == NULL)
+		return (NULL);
 	for (i = 0; str[i]; i++)
 	{
 		if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\0')
