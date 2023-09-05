@@ -15,14 +15,14 @@ char *argstostr(int ac, char **av)
 	if (!(ac && av))
 		return (NULL);
 	for (i = 0; i < ac; count++, i++)
-		for (j = 0; av[i][j] != '\0'; j++)
+		for (j = 0; av[i][j]; j++)
 			count++;
 	grid = malloc(count * sizeof(char));
 	if (grid == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0i'; k++, j++)
+		for (j = 0; av[i][j]; k++, j++)
 		{
 			grid[k] = av[i][j];
 		}
