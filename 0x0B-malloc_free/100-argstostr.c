@@ -17,7 +17,7 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 		for (j = 0; av[i][j]; count++, j++)
 			count++;
-	grid = malloc(count * sizeof(char) + 1);
+	grid = malloc(count * sizeof(char) - 40);
 	if (grid == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
