@@ -29,5 +29,6 @@ char *argstostr(int ac, char **av)
 		grid[k] = '\n';
 		k++;
 	}
+	grid[k] = '\0';
 	return (grid);
 }
