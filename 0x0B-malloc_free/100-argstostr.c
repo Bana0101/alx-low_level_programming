@@ -1,6 +1,10 @@
 #include "main.h"
 
 /**
+ * *argstostr - concatenates all the arguments of your program.
+ * @ac: the numbers of arguments
+ * @av: the buffer of all arguments
+ * Return: char s
 */
 
 char *argstostr(int ac, char **av)
@@ -25,6 +29,5 @@ char *argstostr(int ac, char **av)
 		grid[k] = '\n';
 		k++;
 	}
-			
 	return (grid);
 }
