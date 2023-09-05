@@ -18,7 +18,7 @@ char **strtow(char *str)
 	{
 		if (str[i] == ' ' &&  str[i + 1] != ' ' && str[i + 1] != '\0')
 			nline++;
-		else if (i == 0 && str[i] != ' ' )
+		else if (i == 0 && str[i] != ' ')
 			nline++;
 	}
 	if (nline == 0)
