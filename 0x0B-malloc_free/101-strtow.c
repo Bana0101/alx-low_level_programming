@@ -46,7 +46,6 @@ char **strtow(char *str)
 				grid[line][j] = str[i + j];
 			grid[line][width] = '\0';
 			line++;
-			i += width - 1;
 		}
 	}
 	return (grid);
