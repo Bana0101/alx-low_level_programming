@@ -12,7 +12,7 @@ char **strtow(char *str)
 	int i = 0, j, width = 0, line = 0, nline = 1;
 	char **grid;
 
-	if (str == NULL)
+	if (str == NULL || str[i] == '\0')
 		return (NULL);
 	for (i = 0; str[i]; i++)
 	{
