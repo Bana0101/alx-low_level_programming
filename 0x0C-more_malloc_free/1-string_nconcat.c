@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strlen - a function that calculate the size
+ * _strln - a function that calculate the size
  * @str: the string
  * Return: integer
  */
 
-unsigned int _strlen(char *str)
+unsigned int _strln(char *str)
 {
 	unsigned int i;
 
@@ -29,14 +29,14 @@ unsigned int _strlen(char *str)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *s;
-	unsigned int  i = 0, j = 0, a = _strlen(s1), b = _strlen(s2);
+	unsigned int  i = 0, j = 0, a = _strln(s1), b = _strln(s2);
 
 	if (b > n)
 		b = n;
 	s = (char *)malloc(a + b + 1);
 	if (s == NULL)
 		return (NULL);
-	if (_strlen(s1) > 0)
+	if (_strln(s1) > 0)
 	{
 		for (i = 0; s1[i]; i++)
 			s[i] = s1[i];
