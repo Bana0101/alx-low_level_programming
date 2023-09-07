@@ -31,8 +31,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (!(nmemb && size))
 		return (NULL);
-	tbytes = nmemb * sizeof(int);
-	s = malloc(nmemb * sizeof(int));
+	tbytes = nmemb * size;
+	s = malloc(tbytes);
 	if (s == NULL)
 		return (NULL);
 	_set(s, 0, tbytes);
