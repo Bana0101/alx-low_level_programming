@@ -9,8 +9,8 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	*s;
-	int i;
+	char *s;
+	int i = 0;
 
 	if (!(nmemb && size))
 		return (NULL);
