@@ -21,6 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	while (tbytes--)
 	{
 		*s = 0;
+		s++;
 	}
 	return (s);
 }
