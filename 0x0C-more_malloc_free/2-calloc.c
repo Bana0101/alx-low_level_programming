@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _set - function set memory to zero
+ * *_set - function set memory to zero
  * @s: input char
  * @b: input character
  * @n: input integer
  * Return: s
  */
 
-char _set(char *s, char b, unsigned int n)
+char *_set(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
@@ -27,7 +27,7 @@ char _set(char *s, char b, unsigned int n)
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *s;
-	unsigned int tbytes, i;
+	unsigned int tbytes;
 
 	if (!(nmemb && size))
 		return (NULL);
