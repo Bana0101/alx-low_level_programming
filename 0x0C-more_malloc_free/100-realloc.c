@@ -28,6 +28,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	char *nptr;
 	unsigned int min = old_size;
 
+	if (min == new_size)
+		return (ptr);	
 	if (ptr == NULL)
 	{
 		nptr = malloc(new_size);
@@ -43,8 +45,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	nptr = malloc(new_size);
 	if (nptr == NULL)
 		return (NULL);
-	if (min == new_size)
-		return (ptr);
 	if (new_size < old_size)
 		min = new_size;
 	nptr = derefrence(nptr, ptr, min);
