@@ -7,22 +7,22 @@
  * Return: the new head
  */
 
-list_t *add_node_end(list_t **head, const char *str);
+list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new_head = malloc(sizeof(list_t));
+	list_t *new_node = malloc(sizeof(list_t));
 	list_t *node = *head;
 
-	if (!head || !new_head)
+	if (!head || !new_node)
 		return (NULL);
 	if (str)
 	{
-		new_head->str = strdup(str);
-		if (!new_head->str)
+		new_node->str = strdup(str);
+		if (!new_node->str)
 		{
-			free(new_head);
+			free(new_node);
 			return (NULL);
 		}
-		new_head->len = _strlen(new_head->str);
+		new_node->len = _strlen(new_node->str);
 	}
 	if (node)
 	{
