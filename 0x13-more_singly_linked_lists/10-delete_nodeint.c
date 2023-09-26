@@ -12,7 +12,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	listint_t *node, *p_node;
 	unsigned int i = 0;
 
-	if (!head || *head)
+	if (!head)
 		return (-1);
 	node = *head;
 	if (!index)
