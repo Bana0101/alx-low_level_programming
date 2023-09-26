@@ -17,6 +17,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	if (!*head || !head)
 		return (NULL);
 	node = *head;
+	p_node = node;
 	for (i = 0; i < idx; i++)
 	{
 		p_node = node;
