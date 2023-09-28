@@ -27,17 +27,14 @@ int is_b(const char *b)
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int i, j, sum = 0, coefficient = 1;
+	unsigned int i, j, sum = 0;
 
 	if (is_b(b))
 	{
 		for (i = 0; b[i]; i++)
 			;
 		for (j = 0; j < i; j++)
-		{
-			sum += (b[i - j - 1] - '0') * coefficient;
-			coefficient *= 2;
-		}
+			sum += (b[i - j - 1] - '0') * (1 << j);
 		return (sum);
 	}
 	return (0);
