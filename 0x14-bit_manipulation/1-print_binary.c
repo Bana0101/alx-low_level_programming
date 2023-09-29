@@ -19,7 +19,7 @@ void print_binary(unsigned long int n)
 	{
 		while (count--)
 		{
-			if (n & (1 << count))
+			if (n & (1L << count))
 				_putchar('1');
 			else
 				_putchar('0');
