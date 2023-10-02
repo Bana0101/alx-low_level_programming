@@ -20,7 +20,7 @@ int _strlen(char *s)
 	return (c);
 }
 /**
- * create_file a function that creates a file.
+ * create_file - a function that creates a file.
  * @filename: the name of the file
  * @text_content: the content of the file
  * Return: integer
@@ -33,7 +33,7 @@ int create_file(const char *filename, char *text_content)
 
 	if (!filename)
 		return (-1);
-	file = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
+	file = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSE);
 	if (file == -1)
 		return (-1);
 	if (len)
