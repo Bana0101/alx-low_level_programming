@@ -4,6 +4,9 @@
 #define NOT_OPEN "Error: Can't open the file: %s\n"
 #define NOT_READ "Error: Can't read from the file: %s\n"
 #define NOT_CLOSE "Error: Can't close the file: %d\n"
+
+void print_osabi_more(Elf64_Ehdr h);
+
 /**
  * print_magic - print ELF magic
  * @h: the ELF header
