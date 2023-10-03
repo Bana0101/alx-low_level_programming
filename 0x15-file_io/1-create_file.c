@@ -8,11 +8,13 @@
  * Return: c
 */
 
-ssize_t _strlen(char *s)
+int _strlen(char *s)
 {
-	ssize_t c = 0;
+	int c = 0;
 
-	while (*s != '\0')
+	if (!s)
+		return (0);
+	while (*s)
 	{
 		s++;
 		c++;
@@ -31,7 +33,7 @@ int create_file(const char *filename, char *text_content)
 	int file;
 	ssize_t nbyt = 0, len = _strlen(text_content);
 
-	if (!text_content)
+	if (text_content == NULL)
 		return (1);
 	if (!filename)
 		return (-1);
