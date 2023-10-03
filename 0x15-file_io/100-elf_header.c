@@ -42,6 +42,11 @@ int main(int ac, char **av)
 	b = read(file, &h, sizeof(h));
 	if (b < 1 || b != sizeof(h))
 		dprintf(STDERR_FILENO, NOT_READ, av[1]), exit(98);
+	if (h.e_ident[0] == 0x7f && h.e_ident[1] == 'E' && h.e_ident[2] == 'L' &&
+		       	h.e_ident[3] == 'F')
+		printf("ELF header:\n");
+	else
+		dprintf(STDERR_FILENO, "Not ELF file : %s\n", av[1]), exit(98);
 	print_magic(h);
 	if (close(file))
 		dprintf(STDERR_FILENO, NOT_CLOSE, file), exit(98);
