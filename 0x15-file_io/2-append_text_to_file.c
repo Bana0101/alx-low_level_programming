@@ -26,7 +26,7 @@ int _strlen(char *s)
  * Return: integer
  */
 
-int append_text_to_file(const char *filename, char *text_content);
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int file;
 	ssize_t nbyt = 0, len = _strlen(text_content);
