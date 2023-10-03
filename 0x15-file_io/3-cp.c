@@ -26,7 +26,7 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, NOT_READ, av[1]), exit(98);
 	to_file = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSIONS);
 	if (to_file == -1)
-		dprintf(STDERR_FILNO, NOT_WRITE, av[1]), exit(99);
+		dprintf(STDERR_FILENO, NOT_WRITE, av[1]), exit(99);
 	while ((b = read(from_file, array, BUF)) > 0)
 		if (write(to_file, array, b) != b)
 			dprintf(STDERR_FILENO, NOT_WRITE, av[2]), exit(99);
