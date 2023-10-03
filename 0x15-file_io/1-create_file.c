@@ -8,9 +8,9 @@
  * Return: c
 */
 
-int _strlen(char *s)
+ssize_t _strlen(char *s)
 {
-	int c = 0;
+	ssize_t c = 0;
 
 	while (*s != '\0')
 	{
