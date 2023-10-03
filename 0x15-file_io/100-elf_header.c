@@ -5,7 +5,7 @@
 #define NOT_READ "Error: Can't read from the file: %s\n"
 #define NOT_CLOSE "Error: Can't close the file: %d\n"
 /**
- * print_magic print ELF magic
+ * print_magic - print ELF magic
  * @h: the ELF header
  * Return: void
  */
@@ -13,10 +13,12 @@
 void print_magic(Elf64_Ehdr h)
 {
 	int i;
+
 	printf("  Magic:   ");
 	for (i = 0; i < EI_NIDENT; i++)
-		printf("%2.2x%s", h.e_ident[i], i == EI_NIDENT - 1? "\n" : " ");
+		printf("%2.2x%s", h.e_ident[i], i == EI_NIDENT - 1 ? "\n" : " ");
 }
+
 /**
  * main - Entry point (program)
  * @ac: the number of arguments
