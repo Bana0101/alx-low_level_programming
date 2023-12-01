@@ -11,23 +11,16 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *current, *node;
-	unsigned long int index;
+	unsigned long int index = key_index((const unsigned char *)key, ht->size);
 
 	if (!ht || !ht->array || !value || !key || !ht->size)
 		return (0);
-	index = key_index((const unsigned char *)key, ht->size);
 	current = ht->array[index];
 	while (current)
 	{
 		if (strcmp(current->key, key) == 0)
 		{
 			current->value = strdup(value);
-			if (!current->value)
-			{
-				free(current->key);
-				free(current);
-				return (0);
-			}
 			return (1);
 		}
 		current = current->next;
